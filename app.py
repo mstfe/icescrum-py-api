@@ -61,7 +61,7 @@ class Task(Model):
 
 def restRequest(type):
     headers = {'Accept': 'application/json','Content-Type': 'application/json; charset=UTF-8'}
-    uri = 'http://[ip:port]/icescrum/ws/p/PROJ24/'
+    uri = 'http://:server/ws/p/:pkey/'
     r = requests.get(uri+type,headers=headers,auth=('user', 'password'))
     return json.loads(unicode(r.text.encode('utf-8'), errors='ignore'))  
 
