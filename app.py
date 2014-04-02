@@ -75,7 +75,7 @@ for o in obj:
 
 sSum = 0
 n = 0
-done_sSum_sure = 0
+done_sSum_tim = 0
 done_sSum_task = 0
 
 for task in Tasks:
